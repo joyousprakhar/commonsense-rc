@@ -389,3 +389,4 @@ if __name__ == '__main__':
     dev_data = utils.load_data('./data/dev-data-processed.json')
     test_data = utils.load_data('./data/test-data-processed.json')
     utils.build_vocab(trial_data + train_data + dev_data + test_data)
+    # utils.build_vocab(train_data + dev_data)

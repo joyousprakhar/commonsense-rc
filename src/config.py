@@ -15,7 +15,7 @@ parser.add_argument('--optimizer', type=str, default='adamax', help='optimizer, 
 parser.add_argument('--use_cuda', type='bool', default=True, help='use cuda or not')
 parser.add_argument('--grad_clipping', type=float, default=10.0, help='maximum L2 norm for gradient clipping')
 parser.add_argument('--lr', type=float, default=2e-3, help='learning rate')
-parser.add_argument('--batch_size', type=int, default=32, help='batch size')
+parser.add_argument('--batch_size', type=int, default=64, help='batch size')
 parser.add_argument('--embedding_file', type=str, default='./data/glove.840B.300d.txt', help='embedding file')
 parser.add_argument('--hidden_size', type=int, default=96, help='default size for RNN layer')
 parser.add_argument('--doc_layers', type=int, default=1, help='number of RNN layers for doc encoding')

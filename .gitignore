@@ -11,4 +11,8 @@ data/RACE/
 *.mdl
 answer.txt
 final_output.zip
-data/concept.filter
+data/conceptnet-assertions-5.5.5.csv
+data/dev-data-processed.json
+data/train-data-processed.json
+data/trial-data-processed.json
+data/test-data-processed.json

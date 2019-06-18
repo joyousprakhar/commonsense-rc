@@ -13,8 +13,12 @@ class Example:
         self.d_pos = input_dict['d_pos']
         self.d_ner = input_dict['d_ner']
         self.q_pos = input_dict['q_pos']
+        if (len(self.d_pos) != len(self.passage.split())):
+            print("error")
+            print(self.passage)
+            print(self.d_pos)
         assert len(self.q_pos) == len(self.question.split()), (self.q_pos, self.question)
-        assert len(self.d_pos) == len(self.passage.split())
+        assert len(self.d_pos) == len(self.passage.split())#," ".join(self.d_pos) + " haha " + self.passage
         self.features = np.stack([input_dict['in_q'], input_dict['in_c'], \
                                     input_dict['lemma_in_q'], input_dict['lemma_in_c'], \
                                     input_dict['tf']], 1)
